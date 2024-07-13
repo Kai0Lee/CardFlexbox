@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+@media (max-width:650px) {
+    .product{
+        max-width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .card{
+        max-width: 20rem;
+        border-radius: 1rem;
+        flex-direction: column;
+    }
+}
+@media (min-width:650px) {
+    .product{
+        border-radius: 1rem 0 0 1rem;
+        content:url("./images/image-product-desktop.jpg");
+        width:50%;
+    }
+    .card{
+        max-width: 39rem;
+        border-radius: 1rem 1rem 1rem 1rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    .text{
+        width:50%;
+    }
+}
+
+.bkg {
+    background-color: antiquewhite;
+    margin:.5rem;
+}
+
+.product{
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.card{
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+}
+
+button{
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    color:aliceblue;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: linear .04s;
+    border:none;
+    margin-bottom: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    transform: scale(1.015);
+}
+
+.perf{
+    letter-spacing: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .9rem;
+    color:hsl(228, 12%, 48%);
+    margin-bottom: -.4rem;
+}
+
+.text{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.cost{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+h2{
+    font-size:2rem;
+    color:hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+}
+
+p{
+    line-height: 1.45;
+    color:hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+.mini-cost{
+    font-size:1rem;
+    color:hsl(228, 12%, 48%);
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+h1{
+    font-family: "Fraunces";
+    color: hsl(212, 21%, 14%);
+    font-weight: 900;
+}
+
+.cart{
+    margin-right: .5rem;
+}
